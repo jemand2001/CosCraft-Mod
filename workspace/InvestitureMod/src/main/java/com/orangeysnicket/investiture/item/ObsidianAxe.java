@@ -9,7 +9,6 @@ public class ObsidianAxe extends ItemSword {
         super(material);
         setTranslationKey(Investiture.MODID + "." + unlocalizedName);
         setRegistryName(registryName);
-        setCreativeTab(Investiture.INVESTITURE_TAB);
-
+        setCreativeTab(Investiture.investitureTab);
     }
 }

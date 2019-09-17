@@ -42,5 +42,5 @@ public class ModBlocks {
 	public static final TinStairs TIN_STAIRS = null;
 	public static final ZincBlock ZINC_BLOCK = null;
 	
-	
+	public static final AshLayer ASH_LAYER = null;
 }

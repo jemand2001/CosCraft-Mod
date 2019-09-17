@@ -55,6 +55,8 @@ public final class ModRegistry {
 				new TinBlock().setRegistryName("tin_block").setTranslationKey(Investiture.MODID + "." + "tin_block"),
 				new TinStairs().setRegistryName("tin_stairs").setTranslationKey(Investiture.MODID + "." + "tin_stairs"),
 				new ZincBlock().setRegistryName("zinc_block").setTranslationKey(Investiture.MODID + "." + "zinc_block"),
+
+				new AshLayer().setRegistryName("ash_layer").setTranslationKey(Investiture.MODID + "." + "ash_layer")
 				
 		};
 
@@ -117,7 +119,8 @@ public final class ModRegistry {
                 new ItemBlock(ModBlocks.TIN_BLOCK).setRegistryName(ModBlocks.TIN_BLOCK.getRegistryName()),
                 new ItemBlock(ModBlocks.TIN_STAIRS).setRegistryName(ModBlocks.TIN_STAIRS.getRegistryName()),
                 new ItemBlock(ModBlocks.ZINC_BLOCK).setRegistryName(ModBlocks.ZINC_BLOCK.getRegistryName()),
-                
+
+				new ItemBlock(ModBlocks.ASH_LAYER).setRegistryName(ModBlocks.ASH_LAYER.getRegistryName())
         };
 
 		event.getRegistry().registerAll(items);

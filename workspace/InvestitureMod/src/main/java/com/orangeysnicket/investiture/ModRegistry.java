@@ -1,21 +1,25 @@
 package com.orangeysnicket.investiture;
 
 import com.orangeysnicket.investiture.block.*;
+import com.orangeysnicket.investiture.entity.MistWraith;
+import com.orangeysnicket.investiture.init.ModEntities;
 import com.orangeysnicket.investiture.item.*;
 import com.orangeysnicket.investiture.material.InvestitureMaterials;
 import com.orangeysnicket.investiture.init.ModBlocks;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
 import net.minecraftforge.event.RegistryEvent.Register;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.EntityEntry;
 
-@EventBusSubscriber(modid = Investiture.MODID)
-public final class EventSubscriber {
-	@SubscribeEvent
+public final class ModRegistry {
 	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
 				new AluminumBlock().setRegistryName("aluminum_block").setTranslationKey(Investiture.MODID + "." + "aluminum_block"),
@@ -56,8 +60,6 @@ public final class EventSubscriber {
 
 		event.getRegistry().registerAll(blocks);		
 	}
-	
-	@SubscribeEvent
 	public static void registerItems(Register<Item> event) {
 		final Item[] items = {
 				new AluminumIngot("aluminum_ingot", "aluminum_ingot"),

@@ -57,3 +57,5 @@ tile.investiture.zinc_block.name=Zinc Block
 itemGroup.investiture.investiture=Investiture
 itemGroup.investiture.metals=Metals
 itemGroup.investiture.decor=Decoration Blocks
+
+entity.mistwraith.name=Mistwraith

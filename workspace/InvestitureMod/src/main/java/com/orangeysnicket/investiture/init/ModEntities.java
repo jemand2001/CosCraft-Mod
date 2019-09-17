@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ModEntities {
     public static void init() {
         int id = 0;
-        EntityRegistry.registerModEntity(new ResourceLocation(Investiture.MODID, "mistwraith"), MistWraith.class, "Mistwraith", id++, Investiture.INSTANCE, 64, 3, true, 0x996600, 0x00ff00);
+        EntityRegistry.registerModEntity(new ResourceLocation(Investiture.MODID, "mistwraith"), MistWraith.class, "mistwraith", id++, Investiture.INSTANCE, 64, 3, true, 0x996600, 0x00ff00);
     }
 
     @SideOnly(Side.CLIENT)

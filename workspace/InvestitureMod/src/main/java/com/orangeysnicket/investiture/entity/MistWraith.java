@@ -11,7 +11,7 @@ public class MistWraith extends EntityCreature {
 
     public MistWraith(World worldIn) {
         super(worldIn);
-        setSize(1, 1);
+        setSize(0.9f, 1.5f);
     }
 
     @Override

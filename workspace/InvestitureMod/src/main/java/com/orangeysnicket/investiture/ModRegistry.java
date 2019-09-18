@@ -125,7 +125,8 @@ public final class ModRegistry {
                 new ItemBlock(ModBlocks.TIN_STAIRS).setRegistryName(ModBlocks.TIN_STAIRS.getRegistryName()),
                 new ItemBlock(ModBlocks.ZINC_BLOCK).setRegistryName(ModBlocks.ZINC_BLOCK.getRegistryName()),
 
-				new ItemBlock(ModBlocks.ASH_LAYER).setRegistryName(ModBlocks.ASH_LAYER.getRegistryName())
+				// new ItemBlock(ModBlocks.ASH_LAYER).setRegistryName(ModBlocks.ASH_LAYER.getRegistryName())
+				new AshLayerItem().setRegistryName(ModBlocks.ASH_LAYER.getRegistryName())
         };
 
 		event.getRegistry().registerAll(items);

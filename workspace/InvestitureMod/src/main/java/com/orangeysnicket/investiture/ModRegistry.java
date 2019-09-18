@@ -8,6 +8,7 @@ import com.orangeysnicket.investiture.material.InvestitureMaterials;
 import com.orangeysnicket.investiture.init.ModBlocks;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.state.BlockStateBase;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -29,7 +30,7 @@ public final class ModRegistry {
 				new BlackMetalBlock().setRegistryName("black_metal_block").setTranslationKey(Investiture.MODID + "." + "black_metal_block"),
 				new BrassBlock().setRegistryName("brass_block").setTranslationKey(Investiture.MODID + "." + "brass_block"),
 				new BronzeBlock().setRegistryName("bronze_block").setTranslationKey(Investiture.MODID + "." + "bronze_block"),
-				new BronzeStairs().setRegistryName("bronze_stairs").setTranslationKey(Investiture.MODID + "." + "bronze_stairs"),
+				new BronzeStairs(Block.getStateById(0)).setRegistryName("bronze_stairs").setTranslationKey(Investiture.MODID + "." + "bronze_stairs"),
 				new ChiseledBlackMetalBlock().setRegistryName("chiseled_black_metal_block").setTranslationKey(Investiture.MODID + "." + "chiseled_black_metal_block"),
 				new ChiseledBrass().setRegistryName("chiseled_brass").setTranslationKey(Investiture.MODID + "." + "chiseled_brass"),
 				new ChiseledBronze().setRegistryName("chiseled_bronze").setTranslationKey(Investiture.MODID + "." + "chiseled_bronze"),

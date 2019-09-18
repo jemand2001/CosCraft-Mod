@@ -44,7 +44,7 @@ public class ModelRegistrationHandler {
 		registerModel(Item.getItemFromBlock(ModBlocks.BLACK_METAL_BLOCK), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.BRASS_BLOCK), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.BRONZE_BLOCK), 0);
-		// registerModel(Item.getItemFromBlock(ModBlocks.BRONZE_STAIRS), 0);
+		registerModel(Item.getItemFromBlock(ModBlocks.BRONZE_STAIRS), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.CHISELED_BLACK_METAL_BLOCK), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.CHISELED_BRASS), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.CHISELED_BRONZE), 0);

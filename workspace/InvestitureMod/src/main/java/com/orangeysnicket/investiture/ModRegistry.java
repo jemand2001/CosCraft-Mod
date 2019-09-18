@@ -88,6 +88,8 @@ public final class ModRegistry {
 				new SteelIngot("steel_ingot", "steel_ingot"),
 				new TinIngot("tin_ingot", "tin_ingot"),
 				new ZincIngot("zinc_ingot", "zinc_ingot"),
+
+				new ItemAshSprinkle("ash_sprinkle", "ash_sprinkle")
 		};
 
 		final Item[] itemBlocks = {

@@ -35,7 +35,8 @@ public class ModelRegistrationHandler {
 		registerModel(ModItems.STEEL_INGOT, 0);
 		registerModel(ModItems.TIN_INGOT, 0);
 		registerModel(ModItems.ZINC_INGOT, 0);
-		
+
+		registerModel(ModItems.ASH_SPRINKLE, 0);
 		
 		registerModel(Item.getItemFromBlock(ModBlocks.ALUMINUM_BLOCK), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.ASH_BLOCK), 0);

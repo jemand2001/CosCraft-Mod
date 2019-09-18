@@ -2,7 +2,6 @@ package com.orangeysnicket.investiture.entity.rendering;
 
 import com.orangeysnicket.investiture.Investiture;
 import com.orangeysnicket.investiture.entity.MistWraith;
-import com.orangeysnicket.investiture.entity.rendering.models.CustomModelSlime;
 import net.minecraft.client.model.*;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -28,7 +27,7 @@ public class RenderMistWraith extends RenderLiving<MistWraith> {
 
     public RenderMistWraith(RenderManager rendermanagerIn) {
         super(rendermanagerIn, new ModelCow(), .5f);
-        Investiture.logger.debug("Mistwraith Texture at: " + mistwraithTexture.getPath());
+        Investiture.getLogger().debug("Mistwraith Texture at: " + mistwraithTexture.getPath());
     }
 
     protected static ModelBase getRandomModel() {

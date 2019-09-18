@@ -2,6 +2,7 @@ package com.orangeysnicket.investiture.init;
 
 import com.orangeysnicket.investiture.Investiture;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 @ObjectHolder(Investiture.MODID)
@@ -27,6 +28,6 @@ public class ModItems {
 	public static final Item TIN_INGOT = null;
 	public static final Item ZINC_INGOT = null;
 	
-	
+	public static final Item ASH_SPRINKLE = null;
 	
 }

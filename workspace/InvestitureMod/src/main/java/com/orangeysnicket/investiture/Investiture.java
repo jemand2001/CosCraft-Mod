@@ -26,7 +26,7 @@ public class Investiture {
 	@Mod.Instance
 	public static Investiture INSTANCE;
 
-	public static Logger logger;
+	private static Logger logger;
 
 	public static final CreativeTabs investitureTab = new InvestitureTab();
 	public static final CreativeTabs metalTab = new MetalTab();
@@ -34,6 +34,10 @@ public class Investiture {
 
 	@SidedProxy(clientSide="com.orangeysnicket.investiture.proxy.ClientProxy", serverSide = "com.orangeysnicket.investiture.proxy.ServerProxy")
 	public static CommonProxy proxy;
+
+	public static Logger getLogger() {
+		return logger;
+	}
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {

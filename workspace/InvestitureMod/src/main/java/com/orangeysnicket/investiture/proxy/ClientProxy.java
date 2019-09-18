@@ -11,7 +11,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
-        Investiture.logger.debug("ClientProxy preInit!");
+        Investiture.getLogger().debug("ClientProxy preInit!");
         ModEntities.initModels();
     }
 

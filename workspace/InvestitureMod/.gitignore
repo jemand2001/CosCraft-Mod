@@ -27,3 +27,4 @@ run
 !.gitignore
 /crash-reports/
 stale_outputs_checked
+/saves/

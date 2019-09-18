@@ -15,7 +15,7 @@ public class ModBlocks {
 	public static final BlackMetalBlock BLACK_METAL_BLOCK = null;
 	public static final BrassBlock BRASS_BLOCK = null;
 	public static final BronzeBlock BRONZE_BLOCK = null;
-	// public static final BronzeStairs BRONZE_STAIRS = null;
+	public static final BronzeStairs BRONZE_STAIRS = null;
 	public static final ChiseledBlackMetalBlock CHISELED_BLACK_METAL_BLOCK = null;
 	public static final ChiseledBrass CHISELED_BRASS = null;
 	public static final ChiseledBronze CHISELED_BRONZE = null;

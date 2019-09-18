@@ -11,6 +11,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import org.apache.commons.lang3.Validate;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 
@@ -37,7 +38,13 @@ public class EntityAshSprinkle extends EntityHanging {
 
     @Override
     public void onBroken(Entity brokenEntity) {
-        logger.log(Level.WARN, "Killing EntityAshSprinkle {}", brokenEntity.getName());
+        // Validate.notNull(brokenEntity, "brokenEntity was NULL");
+        //FIXME this shouldn't happen, why does it
+        if (brokenEntity == null) {
+            logger.error("For some reason brokenEntity is null");
+            return;
+        }
+        logger.warn("Killing EntityAshSprinkle {}", brokenEntity.getName());
     }
 
     @Override

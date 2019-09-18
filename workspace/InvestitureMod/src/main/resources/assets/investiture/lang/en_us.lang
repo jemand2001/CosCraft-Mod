@@ -53,6 +53,7 @@ tile.investiture.tin_block.name=Tin Block
 tile.investiture.tin_stairs.name=Tin Stairs
 tile.investiture.zinc_block.name=Zinc Block
 
+tile.investiture.ash_layer.name=Ash
 
 itemGroup.investiture.investiture=Investiture
 itemGroup.investiture.metals=Metals

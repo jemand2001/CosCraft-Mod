@@ -32,7 +32,7 @@ public class ModBlocks {
 	public static final IronRoofing IRON_ROOFING = null;
 	public static final IronStairs IRON_STAIRS = null;
 	public static final LeadBlock LEAD_BLOCK = null;
-	public static final LerasiumBlock LERASIUM_BLOCK = new LerasiumBlock();
+	public static final LerasiumBlock LERASIUM_BLOCK = null;
 	public static final PewterBlock PEWTER_BLOCK = null;
 	public static final PewterStairs PEWTER_STAIRS = null;
 	public static final SilverBlock SILVER_BLOCK = null;

@@ -23,6 +23,7 @@ import net.minecraftforge.fml.common.registry.EntityEntry;
 public final class ModRegistry {
 	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
+				// NORMAL BLOCKS
 				new AluminumBlock().setRegistryName("aluminum_block").setTranslationKey(Investiture.MODID + "." + "aluminum_block"),
 				new AshBlock().setRegistryName("ash_block").setTranslationKey(Investiture.MODID + "." + "ash_block"),
 				new AshTiles().setRegistryName("ash_tiles").setTranslationKey(Investiture.MODID + "." + "ash_tiles"),
@@ -30,7 +31,6 @@ public final class ModRegistry {
 				new BlackMetalBlock().setRegistryName("black_metal_block").setTranslationKey(Investiture.MODID + "." + "black_metal_block"),
 				new BrassBlock().setRegistryName("brass_block").setTranslationKey(Investiture.MODID + "." + "brass_block"),
 				new BronzeBlock().setRegistryName("bronze_block").setTranslationKey(Investiture.MODID + "." + "bronze_block"),
-				new BronzeStairs(Block.getStateById(0)).setRegistryName("bronze_stairs").setTranslationKey(Investiture.MODID + "." + "bronze_stairs"),
 				new ChiseledBlackMetalBlock().setRegistryName("chiseled_black_metal_block").setTranslationKey(Investiture.MODID + "." + "chiseled_black_metal_block"),
 				new ChiseledBrass().setRegistryName("chiseled_brass").setTranslationKey(Investiture.MODID + "." + "chiseled_brass"),
 				new ChiseledBronze().setRegistryName("chiseled_bronze").setTranslationKey(Investiture.MODID + "." + "chiseled_bronze"),
@@ -42,23 +42,27 @@ public final class ModRegistry {
 				new ChiseledTin().setRegistryName("chiseled_tin").setTranslationKey(Investiture.MODID + "." + "chiseled_tin"),
 				new ChiseledZinc().setRegistryName("chiseled_zinc").setTranslationKey(Investiture.MODID + "." + "chiseled_zinc"),
 				new CopperBlock().setRegistryName("copper_block").setTranslationKey(Investiture.MODID + "." + "copper_block"),
-				new CopperStairs().setRegistryName("copper_stairs").setTranslationKey(Investiture.MODID + "." + "copper_stairs"),
 				new DarkSteelBlock().setRegistryName("dark_steel_block").setTranslationKey(Investiture.MODID + "." + "dark_steel_block"),
 				new IronRoofing().setRegistryName("iron_roofing").setTranslationKey(Investiture.MODID + "." + "iron_roofing"),
-				new IronStairs().setRegistryName("iron_stairs").setTranslationKey(Investiture.MODID + "." + "iron_stairs"),
 				new LeadBlock().setRegistryName("lead_block").setTranslationKey(Investiture.MODID + "." + "lead_block"),
 				new LerasiumBlock().setRegistryName("lerasium_block").setTranslationKey(Investiture.MODID + "." + "lerasium_block"),
 				new PewterBlock().setRegistryName("pewter_block").setTranslationKey(Investiture.MODID + "." + "pewter_block"),
-				new PewterStairs().setRegistryName("pewter_stairs").setTranslationKey(Investiture.MODID + "." + "pewter_stairs"),
 				new SilverBlock().setRegistryName("silver_block").setTranslationKey(Investiture.MODID + "." + "silver_block"),
 				new SteelBlock().setRegistryName("steel_block").setTranslationKey(Investiture.MODID + "." + "steel_block"),
 				new Tiles().setRegistryName("tiles").setTranslationKey(Investiture.MODID + "." + "tiles"),
 				new TinBlock().setRegistryName("tin_block").setTranslationKey(Investiture.MODID + "." + "tin_block"),
-				new TinStairs().setRegistryName("tin_stairs").setTranslationKey(Investiture.MODID + "." + "tin_stairs"),
 				new ZincBlock().setRegistryName("zinc_block").setTranslationKey(Investiture.MODID + "." + "zinc_block"),
 
-				new AshLayer().setRegistryName("ash_layer").setTranslationKey(Investiture.MODID + "." + "ash_layer")
-				
+				// ASH LAYERS
+				new AshLayer().setRegistryName("ash_layer").setTranslationKey(Investiture.MODID + "." + "ash_layer"),
+
+				// STAIRS
+				new BronzeStairs(Block.getStateById(0)).setRegistryName("bronze_stairs").setTranslationKey(Investiture.MODID + "." + "bronze_stairs"),
+				new CopperStairs(Block.getStateById(0)).setRegistryName("copper_stairs").setTranslationKey(Investiture.MODID + "." + "copper_stairs"),
+				new IronStairs(Block.getStateById(0)).setRegistryName("iron_stairs").setTranslationKey(Investiture.MODID + "." + "iron_stairs"),
+				new PewterStairs(Block.getStateById(0)).setRegistryName("pewter_stairs").setTranslationKey(Investiture.MODID + "." + "pewter_stairs"),
+				new TinStairs(Block.getStateById(0)).setRegistryName("tin_stairs").setTranslationKey(Investiture.MODID + "." + "tin_stairs"),
+
 		};
 
 		event.getRegistry().registerAll(blocks);		

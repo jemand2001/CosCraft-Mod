@@ -1,8 +1,6 @@
 {
-    "parent": "block/stairs",
+    "parent": "block/cube_all",
     "textures": {
-        "bottom": "investiture:blocks/tin_stairs",
-        "top": "investiture:blocks/tin_stairs",
-        "side": "investiture:blocks/tin_stairs"
+        "all": "investiture:blocks/tin_stairs"
     }
 }

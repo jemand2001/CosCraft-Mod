@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "layers=1":  { "model": "investiture:ash_height2" },
+        "layers=2":  { "model": "investiture:ash_height4" },
+        "layers=3":  { "model": "investiture:ash_height6" },
+        "layers=4":  { "model": "investiture:ash_height8" },
+        "layers=5":  { "model": "investiture:ash_height10" },
+        "layers=6":  { "model": "investiture:ash_height12" },
+        "layers=7":  { "model": "investiture:ash_height14" },
+        "layers=8":  { "model": "investiture:ash_block" }
+    }
+}

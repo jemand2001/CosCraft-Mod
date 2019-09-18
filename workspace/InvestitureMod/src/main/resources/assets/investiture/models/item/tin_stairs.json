@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "parent": "investiture:block/tin_stairs",
     "display": {
         "thirdperson": {
@@ -7,4 +8,7 @@
             "scale": [ 0.1, 0.1, 0.1 ]
         }
     }
+=======
+    "parent": "investiture:block/tin_stairs"
+>>>>>>> ashlayers
 }

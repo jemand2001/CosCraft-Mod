@@ -1,6 +1,6 @@
-item.investiture.investiture.glass_dagger.name=Glass Dagger
-item.investiture.obsidian_axe.name=Obsidian Axe
-item.investiture.investiture.obsidian_dagger.name=Obsidian Dagger
+item.investiture.glass_dagger.name=Glass Dagger
+item.investiture.obsidian_dagger.name=Obsidian Dagger
+item.investiture.obsidian_axe.name=Obsidian axe
 
 item.investiture.aluminum_ingot.name=Aluminum Ingot
 item.investiture.atium_bead.name=Atium Bead
@@ -53,6 +53,9 @@ tile.investiture.tin_block.name=Tin Block
 tile.investiture.tin_stairs.name=Tin Stairs
 tile.investiture.zinc_block.name=Zinc Block
 
+
 itemGroup.investiture.investiture=Investiture
 itemGroup.investiture.metals=Metals
 itemGroup.investiture.decor=Decoration Blocks
+
+entity.mistwraith.name=Mistwraith

@@ -1,8 +1,6 @@
 {
-    "parent": "block/stairs",
+    "parent": "block/cube_all",
     "textures": {
-        "bottom": "investiture:blocks/copper_stairs",
-        "top": "investiture:blocks/copper_stairs",
-        "side": "investiture:blocks/copper_stairs"
+        "all": "investiture:blocks/copper_stairs"
     }
 }

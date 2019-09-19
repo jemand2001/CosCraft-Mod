@@ -39,7 +39,7 @@ public class EntityAshSprinkle extends EntityHanging {
     @Override
     public void onBroken(Entity brokenEntity) {
         // Validate.notNull(brokenEntity, "brokenEntity was NULL");
-        //FIXME this shouldn't happen, why does it
+        //FIXME this shouldn't happen, so why does it
         if (brokenEntity == null) {
             logger.error("For some reason brokenEntity is null");
             return;

@@ -91,6 +91,8 @@ public final class EventSubscriber {
 				new SteelIngot("steel_ingot", Investiture.MODID + "." + "steel_ingot"),
 				new TinIngot("tin_ingot", Investiture.MODID + "." + "tin_ingot"),
 				new ZincIngot("zinc_ingot", Investiture.MODID + "." + "zinc_ingot"),
+
+				new ItemAshSprinkle("ash_sprinkle", "ash_sprinkle")
 		};
 
 		final Item[] itemBlocks = {

@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 stale_outputs_checked
 .metadata
-=======
 # eclipse
 bin
 eclipse
@@ -28,4 +26,5 @@ run
 !LICENSE
 !README.*
 !.gitignore
->>>>>>> c1277ab67af76642bc33dc6b2adeef8425ef2ee3
+
+# eclipse

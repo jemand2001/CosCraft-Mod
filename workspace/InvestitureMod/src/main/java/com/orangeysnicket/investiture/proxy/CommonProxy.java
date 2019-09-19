@@ -1,6 +1,6 @@
 package com.orangeysnicket.investiture.proxy;
 
-import com.orangeysnicket.investiture.ModRegistry;
+import com.orangeysnicket.investiture.EventSubscriber;
 import com.orangeysnicket.investiture.init.ModEntities;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -25,11 +25,11 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        ModRegistry.registerBlocks(event);
+        EventSubscriber.registerBlocks(event);
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        ModRegistry.registerItems(event);
+        EventSubscriber.registerItems(event);
     }
 }

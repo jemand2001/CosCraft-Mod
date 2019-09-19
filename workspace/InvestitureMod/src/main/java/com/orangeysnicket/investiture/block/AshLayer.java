@@ -16,6 +16,7 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 public class AshLayer extends BlockSnow {
+    public static final PropertyInteger LAYERS = PropertyInteger.create("layers", 1, 8);
 
     public AshLayer() {
         super();
@@ -26,7 +27,7 @@ public class AshLayer extends BlockSnow {
 
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, new IProperty[] {LAYERS});
+        return new BlockStateContainer(this, LAYERS);
     }
 
 }

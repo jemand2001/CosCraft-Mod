@@ -40,7 +40,8 @@ public class ModelRegistrationHandler {
 		
 		registerModel(Item.getItemFromBlock(ModBlocks.ALUMINUM_BLOCK), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.ASH_BLOCK), 0);
-		registerModel(Item.getItemFromBlock(ModBlocks.ASH_TILES), 0);
+		registerModel(Item.getItemFromBlock(ModBlocks.ASH_TILES_HALF), 0);
+		registerModel(Item.getItemFromBlock(ModBlocks.ASH_TILES_DOUBLE), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.ATIUM_BLOCK), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.BLACK_METAL_BLOCK), 0);
 		registerModel(Item.getItemFromBlock(ModBlocks.BRASS_BLOCK), 0);

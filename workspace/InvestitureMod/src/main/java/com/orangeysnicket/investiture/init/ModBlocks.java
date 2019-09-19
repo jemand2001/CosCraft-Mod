@@ -10,7 +10,9 @@ public class ModBlocks {
 
 	public static final AluminumBlock ALUMINUM_BLOCK = null;
 	public static final AshBlock ASH_BLOCK = null;
-	public static final AshTiles ASH_TILES = null;
+	//public static final AshTiles ASH_TILES = null;
+	public static final AshTiles.Half ASH_TILES_HALF = null;
+	public static final AshTiles.Double ASH_TILES_DOUBLE = null;
 	public static final AtiumBlock ATIUM_BLOCK = null;
 	public static final BlackMetalBlock BLACK_METAL_BLOCK = null;
 	public static final BrassBlock BRASS_BLOCK = null;

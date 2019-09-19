@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "investiture:ash_tiles_bottom" },
+        "half=top,variant=default": { "model": "investiture:ash_tiles_top" }
+    }
+}

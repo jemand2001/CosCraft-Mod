@@ -1,2 +1,32 @@
+<<<<<<< HEAD
 stale_outputs_checked
 .metadata
+=======
+# eclipse
+bin
+eclipse
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+classes
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+*.DS_Store*
+run
+!LICENSE
+!README.*
+!.gitignore
+>>>>>>> c1277ab67af76642bc33dc6b2adeef8425ef2ee3

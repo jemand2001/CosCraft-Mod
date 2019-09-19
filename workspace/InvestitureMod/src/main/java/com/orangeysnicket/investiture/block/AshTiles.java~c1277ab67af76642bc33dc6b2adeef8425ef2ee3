@@ -2,14 +2,16 @@
 
 import com.orangeysnicket.investiture.Investiture;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 
 public class AshTiles extends Block{
 	
 	public AshTiles() {
 		super(Material.ROCK);
-		setCreativeTab(Investiture.investitureTab);
+		setCreativeTab(Investiture.INVESTITURE_TAB);
 		setSoundType(SoundType.STONE);
 	}
 	
@@ -37,19 +39,19 @@ import net.minecraft.world.World;
 public abstract class AshTiles extends BlockSlab {
 
 	public static final PropertyEnum<Variant> VARIANT = PropertyEnum.<Variant>create("variant", Variant.class);
-
+	
 	public AshTiles(String name) {
 		super(Material.ROCK);
 		this.setRegistryName(name);
 		this.setTranslationKey(Investiture.MODID + "." + name);
-		this.setCreativeTab(Investiture.investitureTab);
-
+		this.setCreativeTab(Investiture.INVESTITURE_TAB);
+		
 		IBlockState iblockstate = this.blockState.getBaseState().withProperty(VARIANT, Variant.DEFAULT);
-
+		
 		if(!this.isDouble()) {
 			iblockstate.withProperty(HALF, BlockSlab.EnumBlockHalf.BOTTOM);
 		}
-
+		
 		this.setDefaultState(iblockstate);
 		this.useNeighborBrightness = !this.isDouble();
 	}
@@ -68,35 +70,35 @@ public abstract class AshTiles extends BlockSlab {
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		return Item.getItemFromBlock(ModBlocks.ASH_TILES_HALF);
 	}
-
-
+	
+	
 	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
 		return new ItemStack(ModBlocks.ASH_TILES_HALF);
 	}
-
+	
 	@Override
 	public final IBlockState getStateFromMeta(final int meta) {
 		IBlockState blockstate = this.blockState.getBaseState().withProperty(VARIANT, Variant.DEFAULT);
-
+		
 		if(!this.isDouble()) {
 			blockstate = blockstate.withProperty(HALF, ((meta&8)!=0)?EnumBlockHalf.TOP:EnumBlockHalf.BOTTOM);
 		}
-
+		
 		return blockstate;
 	}
-
+	
 	@Override
 	public final int getMetaFromState(final IBlockState state) {
 		int meta = 0;
-
+		
 		if(!this.isDouble()&& state.getValue(HALF)==EnumBlockHalf.TOP) {
 			meta |= 8;
 		}
-
+		
 		return meta;
 	}
-
+	
 	@Override
 	protected BlockStateContainer createBlockState() {
 		if(!this.isDouble()){
@@ -104,7 +106,7 @@ public abstract class AshTiles extends BlockSlab {
 		}
 		return new BlockStateContainer(this, new IProperty[] {VARIANT});
 	}
-
+	
 	public static class Double extends AshTiles
 	{
 
@@ -144,7 +146,7 @@ public abstract class AshTiles extends BlockSlab {
 		}
 
 	}
-
+	
 	public static enum Variant implements IStringSerializable
 	{
 		DEFAULT;
@@ -153,6 +155,6 @@ public abstract class AshTiles extends BlockSlab {
 		public String getName() {
 			return "default";
 		}
-
+	
 	}
 }

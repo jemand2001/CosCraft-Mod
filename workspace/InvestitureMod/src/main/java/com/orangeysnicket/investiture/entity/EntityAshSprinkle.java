@@ -11,7 +11,6 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import org.apache.commons.lang3.Validate;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 
@@ -23,22 +22,21 @@ public class EntityAshSprinkle extends EntityHanging {
         super(worldIn);
         this.setSize(1, 1);
 
-        logger.log(Level.WARN, "Initialising EntityAshSprinkle");
+        logger.warn("Initialising EntityAshSprinkle");
     }
 
     @Override
     public int getWidthPixels() {
-        return 12;
+        return 16;
     }
 
     @Override
     public int getHeightPixels() {
-        return 12;
+        return 16;
     }
 
     @Override
     public void onBroken(Entity brokenEntity) {
-        // Validate.notNull(brokenEntity, "brokenEntity was NULL");
         //FIXME this shouldn't happen, so why does it
         if (brokenEntity == null) {
             logger.error("For some reason brokenEntity is null");

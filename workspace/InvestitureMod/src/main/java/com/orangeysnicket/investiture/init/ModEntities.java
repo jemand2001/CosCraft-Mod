@@ -5,6 +5,8 @@ import com.orangeysnicket.investiture.entity.EntityAshSprinkle;
 import com.orangeysnicket.investiture.entity.MistWraith;
 import com.orangeysnicket.investiture.entity.rendering.RenderAshSprinkle;
 import com.orangeysnicket.investiture.entity.rendering.RenderMistWraith;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
@@ -13,6 +15,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Level;
 
 public class ModEntities {
+    private static Minecraft mc = Minecraft.getMinecraft();
     public static void init() {
         //FIXME: Use the EntityEntry builder and move this to a RegistryEvent.Register<EntityEntry> (according to MMD discord)
         int id = 0;
@@ -24,6 +27,7 @@ public class ModEntities {
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         RenderingRegistry.registerEntityRenderingHandler(MistWraith.class, RenderMistWraith.FACTORY);
-        RenderingRegistry.registerEntityRenderingHandler(EntityAshSprinkle.class, RenderAshSprinkle.FACTORY);
+        // RenderingRegistry.registerEntityRenderingHandler(EntityAshSprinkle.class, RenderAshSprinkle.FACTORY);
+        RenderingRegistry.registerEntityRenderingHandler(EntityAshSprinkle.class, new RenderAshSprinkle(mc.getRenderManager()));
     }
 }

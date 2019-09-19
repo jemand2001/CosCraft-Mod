@@ -42,41 +42,4 @@ public class RenderAshSprinkle extends Render<EntityAshSprinkle> {
             return new RenderAshSprinkle(manager);
         }
     }
-
-    public void doRender(EntityAshSprinkle entity, double x, double y, double z, float entityYaw, float partialTicks) {
-        logger.log(Level.WARN, "RENDERING ASH SPRINKLE ENTITY");
-        GlStateManager.pushMatrix();
-        BlockPos blockpos = entity.getHangingPosition();
-        double d0 = (double)blockpos.getX() - entity.posX + x;
-        double d1 = (double)blockpos.getY() - entity.posY + y;
-        double d2 = (double)blockpos.getZ() - entity.posZ + z;
-        GlStateManager.translate(d0 + 0.5D, d1 + 0.5D, d2 + 0.5D);
-        GlStateManager.rotate(180.0F - entity.rotationYaw, 0.0F, 1.0F, 0.0F);
-        this.renderManager.renderEngine.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
-        BlockRendererDispatcher blockrendererdispatcher = this.mc.getBlockRendererDispatcher();
-        ModelManager modelmanager = blockrendererdispatcher.getBlockModelShapes().getModelManager();
-        IBakedModel ibakedmodel = modelmanager.getModel((ModelResourceLocation) this.model);
-
-        GlStateManager.pushMatrix();
-        GlStateManager.translate(-0.5F, -0.5F, -0.5F);
-
-        if (this.renderOutlines)
-        {
-            GlStateManager.enableColorMaterial();
-            GlStateManager.enableOutlineMode(this.getTeamColor(entity));
-        }
-
-        blockrendererdispatcher.getBlockModelRenderer().renderModelBrightnessColor(ibakedmodel, 1.0F, 1.0F, 1.0F, 1.0F);
-
-        if (this.renderOutlines)
-        {
-            GlStateManager.disableOutlineMode();
-            GlStateManager.disableColorMaterial();
-        }
-
-        GlStateManager.popMatrix();
-        GlStateManager.translate(0.0F, 0.0F, 0.4375F);
-        GlStateManager.popMatrix();
-        this.renderName(entity, x + (double)((float)entity.facingDirection.getXOffset() * 0.3F), y - 0.25D, z + (double)((float)entity.facingDirection.getZOffset() * 0.3F));
-    }
 }

@@ -19,8 +19,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class AshLayerItem extends ItemSnow {
-    public AshLayerItem() {
+public class ItemAshLayer extends ItemSnow {
+    public ItemAshLayer() {
         super(ModBlocks.ASH_LAYER);
     }
 

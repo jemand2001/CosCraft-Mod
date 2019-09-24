@@ -1,25 +1,19 @@
 package com.orangeysnicket.investiture;
 
 import com.orangeysnicket.investiture.block.*;
-import com.orangeysnicket.investiture.entity.MistWraith;
+import com.orangeysnicket.investiture.entity.EntityAshSprinkle;
 import com.orangeysnicket.investiture.init.ModEntities;
+import com.orangeysnicket.investiture.init.ModItems;
 import com.orangeysnicket.investiture.item.*;
 import com.orangeysnicket.investiture.material.InvestitureMaterials;
 import com.orangeysnicket.investiture.init.ModBlocks;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.state.BlockStateBase;
-import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemSlab;
 
+import net.minecraft.item.ItemHangingEntity;
 import net.minecraftforge.event.RegistryEvent.Register;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.EntityEntry;
 
 public final class EventSubscriber {
 	public static void registerBlocks(Register<Block> event) {
@@ -92,7 +86,11 @@ public final class EventSubscriber {
 				new TinIngot("tin_ingot", Investiture.MODID + "." + "tin_ingot"),
 				new ZincIngot("zinc_ingot", Investiture.MODID + "." + "zinc_ingot"),
 
-				new ItemAshSprinkle("ash_sprinkle", "ash_sprinkle")
+				// splitting this up over multiple lines for readability; i don't want to put this in its own class
+				// because it already does everything i want like this
+				new ItemHangingEntity(EntityAshSprinkle.class).setRegistryName("ash_sprinkle")
+						.setTranslationKey(Investiture.MODID + "." + "ash_sprinkle")
+						.setCreativeTab(Investiture.decoTab)
 		};
 
 		final Item[] itemBlocks = {
@@ -131,7 +129,7 @@ public final class EventSubscriber {
                 new ItemBlock(ModBlocks.ZINC_BLOCK).setRegistryName(ModBlocks.ZINC_BLOCK.getRegistryName()),
 
 				// new ItemBlock(ModBlocks.ASH_LAYER).setRegistryName(ModBlocks.ASH_LAYER.getRegistryName())
-				new AshLayerItem().setRegistryName(ModBlocks.ASH_LAYER.getRegistryName())
+				new ItemAshLayer().setRegistryName(ModBlocks.ASH_LAYER.getRegistryName())
         };
 
 		event.getRegistry().registerAll(items);
